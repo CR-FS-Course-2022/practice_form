@@ -1,0 +1,86 @@
+body {
+  background: #404040;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.colWhite {
+  color: #ffffff;
+}
+
+.noDecoration {
+  text-decoration: none;
+}
+
+.navbar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background: #222222;
+  padding: 0.5em;
+  align-items: center;
+}
+
+.navbarMenu {
+  position: relative;
+  text-align: end;
+}
+
+.navbarMenu__item {
+  display: inline;
+  padding: 0.5em;
+  margin: 0.2em;
+}
+
+.navbarMenu__item:hover {
+  background: #333333;
+}
+
+.formContainer {
+  color : #404040;
+  background: #aaaaaa;
+  border-radius: 10px;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+.registryForm__section {
+  position: relative;
+  left: 15%;
+  margin: 1em;
+  padding: 1em;
+  border-style: none;
+  font-size: 1.5em;
+}
+
+.registryForm__section > legend{
+  font-weight: bold;
+}
+
+.registryForm__section label,
+.registryForm__section input {
+  margin: 0.1em;
+  padding: 0.1em;
+  display: block;
+}
+
+.registryForm__section label > input[type=radio],
+.registryForm__section label > input[type=checkbox] {
+  display: inline;
+}
+
+.registryForm__section > input {
+  width: 60%;
+}
+
+.buttonSection {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.buttonSection > button {
+  padding: 0.5em;
+  font-size: 1.5em;
+}

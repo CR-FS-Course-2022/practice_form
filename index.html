@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/grid.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title>The Happy Bolt</title>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#changeme" class="noDecoration">
+      <h1 class="navbarTitle colWhite">The Happy Bolt</h1>
+    </a>
+    <ul class="navbarMenu">
+      <li class="navbarMenu__item"><a class="colWhite noDecoration" href="#changeme">Home</a></li>
+      <li class="navbarMenu__item"><a class="colWhite noDecoration" href="#changeme">About</a></li>
+      <li class="navbarMenu__item"><a class="colWhite noDecoration" href="#changeme">Registry</a></li>
+    </ul>
+  </nav>
+  <aside class="leftSection">
+    <p class="colWhite">Lorem modi dolores laboriosam eveniet magnam. Consequatur velit vel libero perferendis minima Vitae tenetur illo recusandae amet nam Illum ipsam eligendi vitae delectus temporibus dolores. Veritatis doloremque itaque atque a accusamus! Magnam nisi neque officia explicabo quod? Voluptatem porro fugiat veritatis sit officia quisquam Provident unde quos id architecto neque Error quaerat obcaecati sint at architecto Fugit similique facere asperiores eaque voluptates enim. Minima dignissimos blanditiis consequatur sit voluptatum ex deserunt perferendis? Suscipit velit doloribus non vero commodi? Nesciunt nihil perferendis vitae quasi minus libero Inventore quaerat odit quis ut provident! Maxime quibusdam debitis totam dolores labore. Rem soluta assumenda</p>
+  </aside>
+  <main class="mainSection">
+    <div class="formContainer">
+      <form action="#changeme" method="post" class="registryForm">
+        <fieldset class="registryForm__section block">
+          <legend>How are you?</legend>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" pattern="^[a-zA-Z]+$" required>
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" name="last_name" pattern="^[a-zA-Z]+$" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </fieldset>
+        <fieldset class="registryForm__section block">
+          <legend>Where do you live?</legend>
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" pattern="^[a-zA-Z]$" required>
+          <label for="postal_code">Zip Code</label>
+          <input type="text" id="postal_code" name="postal_code" pattern="^[0-9]{5}$" title="The postal code is made up of five digits" required>
+          <label for="coutry">Country</label>
+          <select name="country" id="country" required>
+            <optgroup label="Choose your country">
+              <option value="francia">France</option>
+              <option value="portugal">Portugal</option>
+              <option value="andorra">Andorra</option>
+              <option value="spain" selected>Spain</option>
+            </optgroup>
+          </select>
+        </fieldset>
+        <fieldset class="registryForm__section block">
+          <legend>Login</legend>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+          <label for="c_password">Confirm Password</label>
+          <input type="password" id="c_password" name="c_password" required>
+        </fieldset>
+        <fieldset class="registryForm__section block">
+          <legend>Registration conditions</legend>
+          <span class="block">I want to recive offers from The Happy Bolt</span>
+          <label class="inline" for="once_a_day"><input type="radio" id="once_a_day" name="frecuency" value="once_a_day"> Once a Day</label>
+          <label class="inline" for="once_a_week"><input type="radio" id="once_a_week" name="frecuency" value="once_a_week"> Once a Week</label>
+          <label class="inline" for="once_a_month"><input type="radio" id="once_a_month" name="frecuency" value="once_a_month"> Once a Month</label>
+          <label for="terms_conditions"><input type="checkbox" id="terms_conditions" name="terms_conditions" value="yes" required> I accept the term and coditions</label>
+        </fieldset>
+        <div class="buttonSection">
+          <button type="submit">Submit</button>
+          <button type="reset">clear</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <aside class="rightSection">
+    <p class="colWhite">Dolor voluptas elit enim maiores enim Aut nemo quae nemo laudantium quasi. Quisquam non inventore adipisci assumenda molestias? Veniam temporibus eum ab sit nisi? Eveniet maiores magni amet nulla nemo sequi Blanditiis tempora tempore expedita sit exercitationem. Quaerat facilis fuga quibusdam similique dolorum dolor in, corporis deleniti Ipsa corporis sit odit fugiat cum Quis laboriosam ut id aspernatur facilis praesentium fugit Repellat dolorem tenetur facilis earum modi? Eos incidunt hic et sapiente totam nisi Sunt quam magni iusto dolores voluptate saepe molestias Aperiam aspernatur commodi aliquam ipsam fugiat. Voluptatibus numquam eveniet nobis consequatur suscipit. Assumenda adipisci velit et et dignissimos!</p>
+  </aside>
+  <footer class="footerSection">
+    <p class="colWhite">Dolor laudantium odit distinctio eos et ut? Sequi doloremque itaque nobis fugiat hic aliquam? Nostrum aspernatur minima dicta quo doloribus? Ipsum accusamus nihil quaerat quae incidunt voluptatem? Quod pariatur commodi et est est consectetur. Nostrum nemo culpa mollitia sequi laborum. Dolorem molestias unde perspiciatis maxime repellendus Perferendis consequatur veniam qui nesciunt fugiat! Sint molestiae iusto nisi dicta aperiam Totam eveniet illum sunt esse explicabo Facilis accusantium harum asperiores delectus enim Alias at id velit libero quasi quam amet ea, laudantium. Sequi cupiditate dicta repellat et consequatur. Eveniet sed nemo temporibus cumque hic? Dolorem quam dicta quae accusantium ea Quasi ad?</p>
+  </footer>
+</body>
+</html>
