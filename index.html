@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/grid.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="js/script.js" type="text/javascript"></script>
   <title>The Happy Bolt</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
   </aside>
   <main class="mainSection">
     <div class="formContainer">
-      <form action="#changeme" method="post" class="registryForm">
+      <form action="#changeme" method="post" class="registryForm" onsubmit="return validPasswords()" novalidate>
         <fieldset class="registryForm__section block">
           <legend>How are you?</legend>
           <label for="name">Name</label>
@@ -38,7 +39,7 @@
         <fieldset class="registryForm__section block">
           <legend>Where do you live?</legend>
           <label for="city">City</label>
-          <input type="text" id="city" name="city" pattern="^[a-zA-Z]$" required>
+          <input type="text" id="city" name="city" required>
           <label for="postal_code">Zip Code</label>
           <input type="text" id="postal_code" name="postal_code" pattern="^[0-9]{5}$" title="The postal code is made up of five digits" required>
           <label for="coutry">Country</label>
@@ -55,10 +56,14 @@
           <legend>Login</legend>
           <label for="username">Username</label>
           <input type="text" id="username" name="username" required>
+
           <label for="password">Password</label>
           <input type="password" id="password" name="password" required>
           <label for="c_password">Confirm Password</label>
           <input type="password" id="c_password" name="c_password" required>
+
+          <span class="errorMessage" id="passwordsError"></span>
+
         </fieldset>
         <fieldset class="registryForm__section block">
           <legend>Registration conditions</legend>
