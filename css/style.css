@@ -84,3 +84,8 @@ h1 {
   padding: 0.5em;
   font-size: 1.5em;
 }
+
+.errorMessage {
+  background-color: red;
+  color: white;
+}
